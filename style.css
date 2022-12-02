@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    height: 100vh;
+    width: 100%;
+    max-width: 100%;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3d3d3d;
+    max-width: 100%;
+}
+
+.keyboard-frame {
+    padding: .5rem;
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(29, 29, 29);
+    max-width: 100%;
+}
+
+.keyboard-frame .block {
+    margin: .3rem;
+}
+
+.floor {
+    height: auto;
+    width: auto;
+    display: flex;
+    justify-content: start;
+}
+
+.btn {
+    margin: 0.1rem;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(28 66 130);
+    max-width: 100%;
+}
+
+/* floor 1 margin */
+.floor-1 {
+    margin-bottom: 1rem;
+}
+
+/* Esc */
+.block:nth-child(1) .floor-1 > .btn:nth-child(1) {
+    margin-right: 3.3rem;
+}
+
+/* F4 */
+.block:nth-child(1) .floor-1 > .btn:nth-child(5) {
+    margin-right: 2rem;
+}
+
+/* F8 */
+.block:nth-child(1) .floor-1 > .btn:nth-child(9) {
+    margin-right: 2rem;
+}
+
+/* delete */
+.block:nth-child(1) .floor-2 > .btn:nth-child(14) {
+    width: 6.8rem;
+}
+
+/* Tab */
+.block:nth-child(1) .floor-3 > .btn:nth-child(1) {
+    width: 4.5rem;
+}
+
+/* \\ */
+.block:nth-child(1) .floor-3 > .btn:nth-child(14) {
+    width: 5.27rem;
+}
+
+/* CapsLock */
+.block:nth-child(1) .floor-4 > .btn:nth-child(1) {
+    width: 6rem;
+}
+
+/* Enter */
+.block:nth-child(1) .floor-4 > .btn:nth-child(13) {
+    width: 7rem;
+}
+
+/* Left Shift */
+.block:nth-child(1) .floor-5 > .btn:nth-child(1) {
+    width: 7.5rem;
+}
+
+/* Right Shift */
+.block:nth-child(1) .floor-5 > .btn:nth-child(12) {
+    width: 8.7rem;
+}
+
+/* Right Control */
+/* Right Win */
+/* Right Alt */
+.block:nth-child(1) .floor-6 > .btn:nth-child(1), 
+.block:nth-child(1) .floor-6 > .btn:nth-child(2), 
+.block:nth-child(1) .floor-6 > .btn:nth-child(3) {
+    width: 4rem;
+}
+
+/* Space */
+.block:nth-child(1) .floor-6 > .btn:nth-child(4) {
+    width: 19.8rem;
+}
+
+/* Left Alt */
+/* Fn1 */
+/* Fn2 */
+/* Left Control */
+.block:nth-child(1) .floor-6 > .btn:nth-child(5),
+.block:nth-child(1) .floor-6 > .btn:nth-child(6),
+.block:nth-child(1) .floor-6 > .btn:nth-child(7),
+.block:nth-child(1) .floor-6 > .btn:nth-child(8) {
+    width: 3.8rem;
+}
+
+/* 隱藏六塊肌與方向鍵中間的區塊 */
+.block:nth-child(2) .floor-4 > .btn:nth-child(1) {
+    opacity: 0;
+}
+
+/* 致中「上」方向鍵 */
+.block:nth-child(2) .floor-5 {
+    justify-content: center;
+}
